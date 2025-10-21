@@ -5,5 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>client</title>
   </head>
-  <body></body>
+  <body>
+    <div id="div"></div>
+    <template id="page1">
+      <forms>
+        <h1>Sign Up:</h1>
+        <label for="text">user name:</label>
+        <input type="text" id="text" />
+        <br />
+        <br />
+        <label for="password">pasword:</label>
+        <input type="password" id="password" />
+        <br />
+        <br />
+        <label for="Password verification">Password verification:</label>
+        <input type="password" id="Password verification" />
+        <br />
+        <br />
+        <button type="submit" onclick="saveUser()">send</button>
+      </forms>
+    </template>
+
+    <template id="page2">
+      <forms>
+        <h1>login:</h1>
+        <label for="text">user name:</label>
+        <input type="text" id="text" />
+        <br />
+        <br />
+        <label for="password">pasword:</label>
+        <input type="password" id="password" />
+        <br />
+        <br />
+        <button type="submit">send</button>
+      </forms>
+    </template>
+
+    <script src="../js/login.js"></script>
+  </body>
 </html>
