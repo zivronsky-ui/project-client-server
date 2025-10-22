@@ -16,7 +16,7 @@
         <br />
         <br />
         <label for="password">pasword:</label>
-        <input type="password" id="password" />
+        <input type="password" id="password" minlength="4" required />
         <br />
         <br />
         <label for="Password verification">Password verification:</label>
@@ -42,11 +42,22 @@
       </forms>
     </template>
 
-    <script src="../js/login.js"></script>
     <template id="page3">
       <h1>:אנשי הקשר שלי</h1>
       <button id="logOutBtn">Log out</button>
-      <button id="addPerson">add</button>
+      <form id="addPerson">
+        <label> :ליצירת איש קשר חדש</label><br /><br />
+
+        <label for="name">name:</label>
+        <input type="text" id="name" />
+        <br />
+        <br />
+        <label for="phoneNum">phone number:</label>
+        <input type="tel" id="phoneNum" />
+        <br />
+        <br />
+        <input type="submit" value="add" />
+      </form>
       <div>
         <div id="personName">
           ziv ronsky<br />
@@ -57,4 +68,7 @@
       </div>
     </template>
   </body>
+  <script src="../js/database.js"></script>
+  <script src="../js/server.js"></script>
+  <script src="../js/client.js"></script>
 </html>
